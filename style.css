@@ -1,0 +1,133 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+/* header section */
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    width: 100vw;
+    height: 695px;
+    background-color:#2D25A0 ;
+}
+button{
+    width: 168px;
+    height: 44px;
+    background-color: #E02C6D;
+    border: none;
+    color: white;
+}
+button:hover, a:hover{
+    transition: .75s ease;
+    transform: scale(1.15, 1.15);
+    background-color: #ffffff;
+    color: #0A0826;
+
+}
+.Headings{
+    width: 485px;
+    height: 301px;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+}
+.heading-text{
+    letter-spacing: 3px;
+}
+
+.banner{
+    width: 556px;
+    height: 438px;
+}
+
+/* main section */
+main{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-content: center;
+}
+
+.player{
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 20px 0;
+}
+.player-img{
+    width: 300px;
+    height: 256px;
+    margin-bottom: 20px;
+}
+.title{
+    font-size: 1.5rem;
+}
+.info{
+    font-weight: light;
+    font-size: 1rem;
+    margin-top: auto;
+    line-height: 25px;
+    color: #6C6C6C;
+}
+footer{
+    position: relative; 
+    bottom: 0; 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 80px;
+}
+.logo{
+    width: 488px;
+}
+footer .social i{
+    margin: 0 5px;
+    color: #969BAB;
+}
+span{
+    font-size: small;
+    margin-top: 15px;
+}
+
+/* media */
+@media only screen and (max-width: 800px) {
+    header{
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .Headings{
+        width: 278px;
+        height: 138px;
+        font-size: 1.25rem;
+    }
+    .banner{
+        width: 329px;
+        height: 259px;
+    }
+    section{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    footer{
+        margin-bottom: 100px;
+    }
+    footer .logo{
+        width: 212px;
+    }
+    
+}
